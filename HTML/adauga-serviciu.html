@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="ro">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Servicii Moldova - Administrare servicii</title>
+  <link rel="icon" type="image/svg+xml" href="../image/favicon.svg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../CSS/styles.css">
+</head>
+<body data-page="add-service">
+  <header class="top">
+    <div class="container">
+      <div class="header-row">
+        <a class="brand" href="../index.html"><div class="brand-logo">SM</div><div><div class="brand-title">Servicii Moldova</div><div class="brand-sub">Creator studio pentru firme</div></div></a>
+        <nav class="nav-actions">
+          <a class="tab" href="../index.html">Harta</a>
+          <a class="tab" href="cere-oferta.html">Cere oferta</a>
+          <a class="tab" href="serviciu.html">Profil serviciu</a>
+          <a class="tab" href="recenzii.html">Recenzii</a>
+          <a class="tab" href="probleme-locale.html">Probleme</a>
+          <a class="tab" href="mesaje.html">Mesaje</a>
+          <a class="tab" href="autentificare.html">Autentificare</a>
+          <a class="tab primary active" href="cont-firma.html">Cont firma</a>
+        </nav>
+      </div>
+    </div>
+  </header>
+
+  <main class="page">
+    <section class="hero-clean">
+      <div class="hero-row">
+        <div>
+          <h1>Administrare servicii din contul firmei.</h1>
+          <p class="hero-mini">Aceasta pagina este destinata firmelor autentificate pentru actualizarea profilului public.</p>
+        </div>
+        <div class="photo-tile" style="width:min(360px,100%);min-height:170px;background-image:url('https://images.unsplash.com/photo-1581092160607-ee22621dd758?auto=format&fit=crop&w=1000&q=80');">
+          <div class="photo-cap">Profil complet, prezentare profesionala</div>
+        </div>
+      </div>
+    </section>
+
+    <div class="grid-2">
+      <section class="card">
+        <div class="card-head"><h2>Date firma</h2></div>
+        <div class="card-body">
+          <form action="cont-firma.html" method="get" class="field-grid">
+            <div class="field"><label>Nume firma</label><input name="name" required type="text" placeholder="Ex: InstalExpert SRL"></div>
+            <div class="field"><label>Telefon</label><input name="phone" required type="tel" placeholder="+373"></div>
+            <div class="field"><label>Oras</label><select name="city"><option>Chisinau</option><option>Balti</option><option>Orhei</option><option>Cahul</option><option>Soroca</option></select></div>
+            <div class="field"><label>Email</label><input name="email" type="email" placeholder="contact@firma.md"></div>
+            <div class="field span-2"><label>Descriere</label><textarea name="desc" placeholder="Ce oferi, care e experienta, ce garantie ai"></textarea></div>
+            <div class="field"><label>Serviciu #1</label><input name="service1" required type="text" placeholder="Instalare robinet"></div>
+            <div class="field"><label>Pret #1</label><input name="price1" type="text" placeholder="300 lei"></div>
+            <div class="field"><label>Serviciu #2</label><input name="service2" type="text" placeholder="Desfundare tevi"></div>
+            <div class="field"><label>Pret #2</label><input name="price2" type="text" placeholder="450 lei"></div>
+            <div class="span-2 item-actions"><button class="btn primary" type="submit">Salveaza profilul</button><a class="btn" href="cont-firma.html">Dashboard</a></div>
+          </form>
+        </div>
+      </section>
+
+      <aside class="card">
+        <div class="card-head"><h2>Avantaje firma verificata</h2></div>
+        <div class="card-body list">
+          <div class="list-item">Apari mai sus pe harta.</div>
+          <div class="list-item">Clientii au incredere mai mare.</div>
+          <div class="list-item">Conversie mai buna in mesaje.</div>
+          <a class="cta accent" href="cont-firma.html">Activeaza cont firma</a>
+        </div>
+      </aside>
+    </div>
+  </main>
+  <script src="../JavaScript/app.js"></script>
+</body>
+</html>

@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="ro">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Servicii Moldova - Probleme locale</title>
+  <link rel="icon" type="image/svg+xml" href="../image/favicon.svg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../CSS/styles.css">
+</head>
+<body data-page="issues">
+  <header class="top">
+    <div class="container">
+      <div class="header-row">
+        <a class="brand" href="../index.html"><div class="brand-logo">SM</div><div><div class="brand-title">Servicii Moldova</div><div class="brand-sub">Civic action hub</div></div></a>
+        <nav class="nav-actions">
+          <a class="tab" href="../index.html">Harta</a>
+          <a class="tab" href="cere-oferta.html">Cere oferta</a>
+          
+          <a class="tab" href="serviciu.html">Profil serviciu</a>
+          <a class="tab" href="recenzii.html">Recenzii</a>
+          <a class="tab active" href="probleme-locale.html">Probleme</a>
+          <a class="tab" href="mesaje.html">Mesaje</a>
+          <a class="tab" href="autentificare.html">Autentificare</a>
+          <a class="tab primary" href="cont-firma.html">Cont firma</a>
+        </nav>
+      </div>
+    </div>
+  </header>
+
+  <main class="page">
+    <section class="hero-clean">
+      <div class="hero-row">
+        <div>
+          <h1>Raportare publica a problemelor locale.</h1>
+          <p class="hero-mini">Problemele sunt centralizate, sustinute de comunitate si urmarite pana la rezolvare.</p>
+        </div>
+        <div class="photo-tile" style="width:min(360px,100%);min-height:170px;background-image:url('https://images.unsplash.com/photo-1494522855154-9297ac14b55f?auto=format&fit=crop&w=1000&q=80');">
+          <div class="photo-cap">Probleme raportate cu impact local</div>
+        </div>
+      </div>
+      <div class="metric-strip">
+        <div class="m"><b>248</b><span>active</span></div>
+        <div class="m"><b>96</b><span>sponsori</span></div>
+        <div class="m"><b>1,032</b><span>rezolvate</span></div>
+      </div>
+    </section>
+
+    <div class="grid-2">
+      <section class="card">
+        <div class="card-head"><h2>Probleme deschise</h2></div>
+        <div class="card-body list">
+          <article class="list-item"><div class="item-top"><span class="item-title">Tobogan stricat in parc</span><span class="badge">Deschis</span></div><div class="item-meta">Riscani, Chisinau</div><div class="item-actions"><a class="small-btn primary" href="mesaje.html">Sustin</a><a class="small-btn accent" href="cere-oferta.html">Sponsorizeaza</a></div></article>
+          <article class="list-item"><div class="item-top"><span class="item-title">Groapa mare pe strada</span><span class="badge">Nou</span></div><div class="item-meta">Orhei</div><div class="item-actions"><a class="small-btn primary" href="mesaje.html">Sustin</a><a class="small-btn accent" href="cere-oferta.html">Sponsorizeaza</a></div></article>
+          <article class="list-item"><div class="item-top"><span class="item-title">Iluminat defect pe bulevard</span><span class="badge">Deschis</span></div><div class="item-meta">Balti</div><div class="item-actions"><a class="small-btn primary" href="mesaje.html">Sustin</a><a class="small-btn accent" href="cere-oferta.html">Sponsorizeaza</a></div></article>
+        </div>
+      </section>
+
+      <aside class="card">
+        <div class="card-head"><h2>Adauga sesizare</h2></div>
+        <div class="card-body">
+          <form action="probleme-locale.html" method="get" class="field-grid">
+            <div class="field span-2"><label>Titlu</label><input type="text" required placeholder="Ex: trecere pietoni nefunctionala"></div>
+            <div class="field"><label>Oras</label><select><option>Chisinau</option><option>Balti</option><option>Orhei</option><option>Cahul</option></select></div>
+            <div class="field"><label>Categorie</label><select><option>Drum</option><option>Parc</option><option>Iluminat</option></select></div>
+            <div class="field span-2"><label>Descriere</label><textarea required placeholder="Descrie problema si impactul"></textarea></div>
+            <div class="span-2 item-actions"><button class="btn accent" type="submit">Trimite sesizarea</button></div>
+          </form>
+        </div>
+      </aside>
+    </div>
+  </main>
+  <script src="../JavaScript/app.js"></script>
+</body>
+</html>
