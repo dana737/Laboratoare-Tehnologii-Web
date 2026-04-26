@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="ro">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Servicii Moldova - Date salvate AJAX</title>
+  <link rel="icon" type="image/svg+xml" href="image/favicon.svg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="CSS/styles.css">
+</head>
+<body data-page="ajax-dashboard">
+  <header class="top">
+    <div class="container">
+      <div class="header-row">
+        <a class="brand" href="index.html">
+          <div class="brand-logo">SM</div>
+          <div>
+            <div class="brand-title">Servicii Moldova</div>
+            <div class="brand-sub">Panou AJAX cu date salvate</div>
+          </div>
+        </a>
+        <nav class="nav-actions">
+          <a class="tab" href="index.html">Harta</a>
+          <a class="tab" href="HTML/cere-oferta.html">Cere oferta</a>
+          <a class="tab" href="HTML/probleme-locale.html">Probleme</a>
+          <a class="tab" href="HTML/autentificare.html">Autentificare</a>
+          <a class="tab primary active" href="date-salvate.html">Date salvate</a>
+        </nav>
+      </div>
+
+      <div class="stats-row" id="ajax-stats">
+        <span class="badge">Se incarca datele...</span>
+      </div>
+    </div>
+  </header>
+
+  <main class="page">
+    <section class="hero-clean" style="margin-bottom:.9rem;">
+      <div class="hero-row">
+        <div>
+          <h1>Datele sunt incarcate dinamic prin AJAX.</h1>
+          <p class="hero-mini">Aceasta pagina apeleaza endpoint-ul PHP `api/dashboard.php` si construieste continutul fara refresh complet al paginii.</p>
+        </div>
+        <div class="stack-cards" style="min-width:280px;">
+          <div class="c"><strong>Tehnologie</strong><p>Formulare trimise cu `fetch()`.</p></div>
+          <div class="c"><strong>Raspuns</strong><p>Endpoint-uri JSON pentru frontend.</p></div>
+          <div class="c"><strong>Afisare</strong><p>Panou actualizat asincron.</p></div>
+        </div>
+      </div>
+    </section>
+
+    <div class="grid-2" style="grid-template-columns:1fr 1fr;">
+      <section class="card">
+        <div class="card-head"><h2>Cereri de oferta</h2><span class="badge" data-count="offers">0</span></div>
+        <div class="card-body list" id="offers-list"></div>
+      </section>
+
+      <section class="card">
+        <div class="card-head"><h2>Profile firma</h2><span class="badge" data-count="companies">0</span></div>
+        <div class="card-body list" id="companies-list"></div>
+      </section>
+
+      <section class="card">
+        <div class="card-head"><h2>Sesizari locale</h2><span class="badge" data-count="issues">0</span></div>
+        <div class="card-body list" id="issues-list"></div>
+      </section>
+
+      <section class="card">
+        <div class="card-head"><h2>Conturi noi</h2><span class="badge" data-count="users">0</span></div>
+        <div class="card-body list" id="users-list"></div>
+      </section>
+
+      <section class="card">
+        <div class="card-head"><h2>Autentificari recente</h2><span class="badge" data-count="logins">0</span></div>
+        <div class="card-body list" id="logins-list"></div>
+      </section>
+    </div>
+  </main>
+
+  <script src="JavaScript/app.js"></script>
+  <script src="JavaScript/ajax.js"></script>
+</body>
+</html>

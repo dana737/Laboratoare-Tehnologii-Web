@@ -1,0 +1,122 @@
+<!doctype html>
+<html lang="ro">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Servicii Moldova - Home</title>
+  <link rel="icon" type="image/svg+xml" href="image/favicon.svg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="CSS/styles.css">
+</head>
+<body data-page="index">
+  <header class="top">
+    <div class="container">
+      <div class="header-row">
+        <a class="brand" href="index.html">
+          <div class="brand-logo">SM</div>
+          <div>
+            <div class="brand-title">Servicii Moldova</div>
+            <div class="brand-sub">Marketplace modern pentru servicii locale</div>
+          </div>
+        </a>
+        <nav class="nav-actions">
+          <a class="tab active" href="index.html">Harta</a>
+          <a class="tab" href="HTML/cere-oferta.html">Cere oferta</a>
+          
+          <a class="tab" href="HTML/serviciu.html">Profil serviciu</a>
+          <a class="tab" href="HTML/recenzii.html">Recenzii</a>
+          <a class="tab" href="HTML/probleme-locale.html">Probleme</a>
+          <a class="tab" href="date-salvate.html">Date salvate</a>
+          <a class="tab" href="HTML/mesaje.html">Mesaje</a>
+          <a class="tab" href="HTML/autentificare.html">Autentificare</a>
+          <a class="tab primary" href="HTML/cont-firma.html">Cont firma</a>
+        </nav>
+      </div>
+
+      <div class="search-row">
+        <div class="search">
+          <input type="search" placeholder="Cauta serviciu, oras, companie">
+          <a class="small-btn" href="index.html">Reset</a>
+        </div>
+        <div class="pill">
+          <select>
+            <option>Toata Moldova</option>
+            <option>Chisinau</option>
+            <option>Balti</option>
+            <option>Orhei</option>
+            <option>Cahul</option>
+            <option>Soroca</option>
+          </select>
+        </div>
+        <a class="btn accent" href="HTML/cere-oferta.html">Cauta</a>
+      </div>
+
+      <div class="stats-row">
+        <span class="badge">1,284 furnizori activi</span>
+        <span class="badge">412 firme verificate</span>
+        <span class="badge">18 min timp mediu de raspuns</span>
+      </div>
+    </div>
+  </header>
+
+  <main class="page">
+    <div class="grid-3">
+      <aside class="card">
+        <div class="card-head"><h2>Categorii</h2></div>
+        <div class="card-body">
+          <div class="left-menu">
+            <a href="HTML/cere-oferta.html">Reparatii</a>
+            <a href="HTML/cere-oferta.html">Curatenie</a>
+            <a href="HTML/cere-oferta.html">Beauty</a>
+            <a href="HTML/cere-oferta.html">IT si web</a>
+            <a href="HTML/cere-oferta.html">Transport</a>
+          </div>
+          <div class="gradient-card" style="margin-top:.7rem;">
+            <strong>Tips rapid</strong>
+            <p class="muted" style="margin-top:.35rem;">Descrie problema concret: ce, unde, cand. Vei primi oferte mai bune.</p>
+          </div>
+        </div>
+      </aside>
+
+      <section class="card">
+        <div class="card-head"><h2>Harta Google - Moldova</h2><span class="badge">Live view</span></div>
+        <div class="card-body">
+          <iframe class="map-frame" title="Harta Google Moldova" loading="lazy" referrerpolicy="no-referrer-when-downgrade" src="https://www.google.com/maps?q=Moldova&output=embed"></iframe>
+        </div>
+      </section>
+
+      <aside class="card">
+        <div class="card-head"><h2>Firme recomandate</h2></div>
+        <div class="card-body list">
+          <article class="list-item">
+            <div class="item-top"><span class="item-title">InstalExpert SRL</span><span class="badge">4.9</span></div>
+            <div class="item-meta">Chisinau · Instalatii · disponibil azi</div>
+            <div class="item-actions"><a class="small-btn" href="HTML/serviciu-instalexpert.html">Detalii</a><a class="small-btn accent" href="HTML/cere-oferta.html">Cere oferta</a></div>
+          </article>
+          <article class="list-item">
+            <div class="item-top"><span class="item-title">CleanPro</span><span class="badge">4.7</span></div>
+            <div class="item-meta">Balti · Curatenie birouri</div>
+            <div class="item-actions"><a class="small-btn" href="HTML/serviciu-cleanpro.html">Detalii</a><a class="small-btn accent" href="HTML/cere-oferta.html">Cere oferta</a></div>
+          </article>
+          <article class="list-item">
+            <div class="item-top"><span class="item-title">NordIT Service</span><span class="badge">5.0</span></div>
+            <div class="item-meta">Orhei · Reparatii laptop</div>
+            <div class="item-actions"><a class="small-btn" href="HTML/serviciu-nordit.html">Detalii</a><a class="small-btn accent" href="HTML/cere-oferta.html">Cere oferta</a></div>
+          </article>
+          <div class="gradient-card">
+            <strong>Date reale salvate</strong>
+            <p class="muted" style="margin-top:.35rem;">Vezi imediat inregistrarile trimise de utilizatori si firme.</p>
+            <div class="item-actions"><a class="small-btn accent" href="date-salvate.html">Deschide panoul</a></div>
+          </div>
+        </div>
+      </aside>
+    </div>
+  </main>
+
+  <div class="floating-cta"><a class="cta accent" href="HTML/cere-oferta.html">Cerere rapida</a></div>
+  <script src="JavaScript/app.js"></script>
+  <script src="JavaScript/ajax.js"></script>
+</body>
+</html>
