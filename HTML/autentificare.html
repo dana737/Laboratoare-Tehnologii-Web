@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="ro">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Servicii Moldova - Autentificare</title>
+  <link rel="icon" type="image/svg+xml" href="../image/favicon.svg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../CSS/styles.css">
+</head>
+<body data-page="auth">
+  <header class="top">
+    <div class="container">
+      <div class="header-row">
+        <a class="brand" href="../index.html"><div class="brand-logo">SM</div><div><div class="brand-title">Servicii Moldova</div><div class="brand-sub">Secure access</div></div></a>
+        <nav class="nav-actions">
+          <a class="tab" href="../index.html">Harta</a>
+          <a class="tab" href="cere-oferta.html">Cere oferta</a>
+          
+          <a class="tab" href="serviciu.html">Profil serviciu</a>
+          <a class="tab" href="recenzii.html">Recenzii</a>
+          <a class="tab" href="probleme-locale.html">Probleme</a>
+          <a class="tab" href="mesaje.html">Mesaje</a>
+          <a class="tab active" href="autentificare.html">Autentificare</a>
+          <a class="tab primary" href="cont-firma.html">Cont firma</a>
+        </nav>
+      </div>
+    </div>
+  </header>
+
+  <main class="page">
+    <section class="hero-clean" style="max-width:900px;margin:0 auto .9rem;">
+      <div class="hero-row">
+        <div>
+          <h1>Autentificare pentru conturi client si conturi firma.</h1>
+          <p class="hero-mini">Accesul in platforma permite gestionarea cererilor, mesajelor si profilului public.</p>
+        </div>
+        <div class="hero-proof" style="margin:0;">
+          <span>cont client</span>
+          <span>cont firma</span>
+          <span>istoric mesaje</span>
+        </div>
+      </div>
+    </section>
+
+    <div class="grid-2" style="grid-template-columns:1fr 1fr;">
+      <section class="card">
+        <div class="card-head"><h2>Login</h2></div>
+        <div class="card-body">
+          <form action="../cgi/login.php" method="post" class="field-grid" data-server-submit="cgi">
+            <div class="field span-2"><label>Email</label><input name="email" type="email" required placeholder="cont@email.md"></div>
+            <div class="field span-2"><label>Parola</label><input name="password" type="password" required placeholder="parola"></div>
+            <div class="span-2 item-actions"><button class="btn primary" type="submit">Intra in cont</button><a class="btn" href="../index.html">Inapoi la harta</a></div>
+          </form>
+        </div>
+      </section>
+
+      <section class="card">
+        <div class="card-head"><h2>Inregistrare noua</h2></div>
+        <div class="card-body">
+          <form action="../cgi/register.php" method="post" class="field-grid" data-server-submit="cgi">
+            <div class="field span-2"><label>Nume</label><input name="name" type="text" required placeholder="Nume / firma"></div>
+            <div class="field span-2"><label>Email</label><input name="email" type="email" required placeholder="email"></div>
+            <div class="field span-2"><label>Parola</label><input name="password" type="password" required placeholder="parola"></div>
+            <div class="span-2 item-actions"><button class="btn accent" type="submit">Creeaza cont</button><a class="btn" href="cont-firma.html">Cont firma</a></div>
+          </form>
+        </div>
+      </section>
+    </div>
+  </main>
+  <script src="../JavaScript/app.js"></script>
+</body>
+</html>

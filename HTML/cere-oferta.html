@@ -1,0 +1,100 @@
+<!doctype html>
+<html lang="ro">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Servicii Moldova - Cere oferta</title>
+  <link rel="icon" type="image/svg+xml" href="../image/favicon.svg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../CSS/styles.css">
+</head>
+<body data-page="offer">
+  <header class="top">
+    <div class="container">
+      <div class="header-row">
+        <a class="brand" href="../index.html"><div class="brand-logo">SM</div><div><div class="brand-title">Servicii Moldova</div><div class="brand-sub">Request studio</div></div></a>
+        <nav class="nav-actions">
+          <a class="tab" href="../index.html">Harta</a>
+          <a class="tab active" href="cere-oferta.html">Cere oferta</a>
+          
+          <a class="tab" href="serviciu.html">Profil serviciu</a>
+          <a class="tab" href="recenzii.html">Recenzii</a>
+          <a class="tab" href="probleme-locale.html">Probleme</a>
+          <a class="tab" href="mesaje.html">Mesaje</a>
+          <a class="tab" href="autentificare.html">Autentificare</a>
+          <a class="tab primary" href="cont-firma.html">Cont firma</a>
+        </nav>
+      </div>
+    </div>
+  </header>
+
+  <main class="page">
+    <section class="hero-clean">
+      <div class="hero-row">
+        <div>
+          <h1>Transmitere cerere de oferta catre furnizori relevanti.</h1>
+          <p class="hero-mini">Completezi cererea o singura data, iar firmele din categorie raspund direct cu oferta.</p>
+        </div>
+        <div class="stack-cards" style="min-width:260px;">
+          <div class="c"><strong>Pas 1</strong><p>Descrii lucrarea.</p></div>
+          <div class="c"><strong>Pas 2</strong><p>Primesti raspunsuri.</p></div>
+          <div class="c"><strong>Pas 3</strong><p>Alegi oferta buna.</p></div>
+        </div>
+      </div>
+    </section>
+
+    <div class="grid-2">
+      <section class="card">
+        <div class="card-head"><h2>Formular client</h2></div>
+        <div class="card-body">
+          <form action="../cgi/submit_offer.php" method="post" class="field-grid" data-server-submit="cgi">
+            <div class="field"><label>Categorie</label><select name="category"><option>Reparatii</option><option>Curatenie</option><option>IT</option><option>Transport</option></select></div>
+            <div class="field"><label>Urgenta</label><select name="urgency"><option>Azi</option><option>2-3 zile</option><option>Programat</option></select></div>
+            <div class="field span-2"><label>Descriere</label><textarea name="description" required placeholder="Ex: curge robinetul in baie, am nevoie de interventie azi dupa 16:00"></textarea></div>
+            <div class="field"><label>Oras</label><select name="city"><option>Chisinau</option><option>Balti</option><option>Orhei</option><option>Cahul</option><option>Soroca</option></select></div>
+            <div class="field"><label>Telefon</label><input name="phone" required type="tel" placeholder="+373"></div>
+            <div class="field span-2"><label>Buget estimativ</label><input name="budget" type="text" placeholder="300-700 lei"></div>
+            <input type="hidden" name="company" value="InstalExpert SRL">
+            <div class="span-2 item-actions"><button class="btn accent" type="submit">Trimite cererea</button><a class="btn" href="mesaje.html">Vezi mesajele</a></div>
+          </form>
+        </div>
+      </section>
+
+      <aside class="card">
+        <div class="card-head"><h2>Preview cerere</h2></div>
+        <div class="card-body list">
+          <div class="list-item"><strong>Client:</strong> persoana fizica</div>
+          <div class="list-item"><strong>Zona:</strong> Chisinau centru</div>
+          <div class="list-item"><strong>Status:</strong> asteapta oferte</div>
+          <div class="gradient-card">
+            <strong>Pro tip</strong>
+            <p class="muted" style="margin-top:.4rem;">Ataseaza detalii despre acces, etaj, ora preferata. Eviti discutii inutile.</p>
+          </div>
+          <a class="cta" href="mesaje.html">Continua spre Mesaje</a>
+        </div>
+      </aside>
+    </div>
+
+    <section class="card" style="margin-top:.9rem;">
+      <div class="card-head"><h2>FAQ rapid</h2></div>
+      <div class="card-body list">
+        <article class="list-item">
+          <div class="item-title">In cat timp primesc prima oferta?</div>
+          <div class="item-meta">De obicei in 10-30 minute, in functie de oras si categorie.</div>
+        </article>
+        <article class="list-item">
+          <div class="item-title">Pot cere mai multe oferte simultan?</div>
+          <div class="item-meta">Da. Cererea ta este vizibila pentru firmele din categoria selectata.</div>
+        </article>
+        <article class="list-item">
+          <div class="item-title">Cum aleg furnizorul potrivit?</div>
+          <div class="item-meta">Compara pret, timp de raspuns si recenziile publice.</div>
+        </article>
+      </div>
+    </section>
+  </main>
+  <script src="../JavaScript/app.js"></script>
+</body>
+</html>

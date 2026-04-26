@@ -1,0 +1,113 @@
+<!doctype html>
+<html lang="ro">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Servicii Moldova - Recenzii</title>
+  <link rel="icon" type="image/svg+xml" href="../image/favicon.svg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../CSS/styles.css">
+</head>
+<body data-page="reviews">
+  <header class="top">
+    <div class="container">
+      <div class="header-row">
+        <a class="brand" href="../index.html"><div class="brand-logo">SM</div><div><div class="brand-title">Servicii Moldova</div><div class="brand-sub">Cauta recenzii pe firma</div></div></a>
+        <nav class="nav-actions">
+          <a class="tab" href="../index.html">Harta</a>
+          <a class="tab" href="cere-oferta.html">Cere oferta</a>
+          
+          <a class="tab" href="serviciu.html">Profil serviciu</a>
+          <a class="tab active" href="recenzii.html">Recenzii</a>
+          <a class="tab" href="probleme-locale.html">Probleme</a>
+          <a class="tab" href="mesaje.html">Mesaje</a>
+          <a class="tab" href="autentificare.html">Autentificare</a>
+          <a class="tab primary" href="cont-firma.html">Cont firma</a>
+        </nav>
+      </div>
+    </div>
+  </header>
+
+  <main class="page">
+    <section class="hero-clean">
+      <div class="hero-row">
+        <div>
+          <h1>Evaluari publice pentru fiecare companie listata.</h1>
+          <p class="hero-mini">Verifici reputatia firmei pe baza feedback-ului real inainte de a solicita oferta.</p>
+        </div>
+        <div class="hero-proof" style="margin:0;">
+          <span>1,284 recenzii</span>
+          <span>scor 4.8/5</span>
+          <span>firme verificate</span>
+        </div>
+      </div>
+    </section>
+
+    <div class="grid-2">
+      <section class="card">
+        <div class="card-head"><h2>Recenzii pe firme</h2></div>
+        <div class="card-body list">
+          <article id="firma-instalexpert" class="list-item">
+            <div class="item-top"><span class="item-title">InstalExpert SRL</span><span class="badge">4.9 ⭐ (128)</span></div>
+            <div class="item-meta">Chisinau · instalatii</div>
+            <p class="muted" style="margin-top:.35rem;">"Au venit in aceeasi zi, au lucrat curat, pret corect." - Ana M.</p>
+            <p class="muted" style="margin-top:.2rem;">"Factura emisa, timp de raspuns foarte bun." - Victor C.</p>
+            <div class="item-actions"><a class="small-btn" href="serviciu-instalexpert.html">Vezi profil firma</a></div>
+          </article>
+
+          <article id="firma-cleanpro" class="list-item">
+            <div class="item-top"><span class="item-title">CleanPro</span><span class="badge">4.7 ⭐ (91)</span></div>
+            <div class="item-meta">Balti · curatenie</div>
+            <p class="muted" style="margin-top:.35rem;">"Echipa punctuala, au lasat totul impecabil." - Elena R.</p>
+            <p class="muted" style="margin-top:.2rem;">"Raport calitate/pret foarte bun." - Dinu P.</p>
+            <div class="item-actions"><a class="small-btn" href="serviciu-cleanpro.html">Vezi profil firma</a></div>
+          </article>
+
+          <article id="firma-nordit" class="list-item">
+            <div class="item-top"><span class="item-title">NordIT Service</span><span class="badge">4.9 ⭐ (74)</span></div>
+            <div class="item-meta">Orhei · IT</div>
+            <p class="muted" style="margin-top:.35rem;">"Diagnostic clar si reparatie rapida pentru laptop." - Sergiu T.</p>
+            <p class="muted" style="margin-top:.2rem;">"Comunicare excelenta, recomand." - Irina B.</p>
+            <div class="item-actions"><a class="small-btn" href="serviciu-nordit.html">Vezi profil firma</a></div>
+          </article>
+        </div>
+      </section>
+
+      <aside class="card">
+        <div class="card-head"><h2>Gaseste firma</h2></div>
+        <div class="card-body list">
+          <div class="field">
+            <label>Cautare rapida (manual)</label>
+            <input list="firme-list" type="text" placeholder="Scrie numele firmei (ex: InstalExpert)">
+            <datalist id="firme-list">
+              <option value="InstalExpert SRL"></option>
+              <option value="CleanPro"></option>
+              <option value="NordIT Service"></option>
+            </datalist>
+          </div>
+
+          <div class="list-item">
+            <strong>Acces direct la firme:</strong>
+            <div class="firm-switch" style="margin-top:.5rem;">
+              <a href="#firma-instalexpert">InstalExpert</a>
+              <a href="#firma-cleanpro">CleanPro</a>
+              <a href="#firma-nordit">NordIT</a>
+            </div>
+          </div>
+
+          <a class="cta" href="serviciu.html">Deschide catalog profil servicii</a>
+
+          <div class="list-item">
+            <strong>Vrei sa lasi recenzie?</strong>
+            <p class="muted" style="margin-top:.3rem;">Dupa finalizarea lucrarii, completezi formularul si apare in fluxul public.</p>
+            <a class="small-btn accent" href="recenzii.html">Adauga recenzie</a>
+          </div>
+        </div>
+      </aside>
+    </div>
+  </main>
+  <script src="../JavaScript/app.js"></script>
+</body>
+</html>
